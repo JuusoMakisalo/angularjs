@@ -5,6 +5,13 @@
     <script src="app.js"></script>
     <body>
         <div ng-app="myApp">
-        <div ng-include="myListing.htm" ng-controller="myCtrl"></div>
+        <div ng-controller="myCtrl">
+        <table>
+            <tr ng-repeat="x in names">
+              <td>{{ x.Name }}</td>
+              <td>{{ x.Country }}</td>
+            </tr>
+        </table>
+    </div>
     </body>
  </html>
