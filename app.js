@@ -5,6 +5,7 @@ angular.module('myApp', [])
 .controller('myCtrl', function ($scope){
 
 $scope.products = ["Milk", "Bread", "Cheese"];
+
 $scope.addItem = function () {
 $scope.errortext = "";
 
