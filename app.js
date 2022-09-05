@@ -6,5 +6,4 @@ angular.module('myApp', [])
   $http.get("https://www.w3schools.com/angular/customers_mysql.php")
   .then(function (response) {$scope.names = response.data.records;});
 });
-
 })();
