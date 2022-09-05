@@ -1,17 +1,10 @@
 <!DOCTYPE html>
  <html lang="en-US">
-     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
-     <script src="app.js"></script>
-      <body ng-app="myApp">
-        <div ng-controller="myCtrl">
-            <ul>
-            <li ng-repeat="x in products">
-                {{x}}<span ng-click="removeItem($index)">&times;</span>
-            </li>
-            </ul>
-            <input ng-model="addMe">
-            <button ng-click="addItem()">Add</button>
-            <p>{{errortext}}</p>
-        </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+    <body>
+        <div ng-app="myApp">
+        <div ng-include="'myListing.htm'" ng-controller="myCtrl"></div>
     </body>
  </html>
