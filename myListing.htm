@@ -1,5 +1,6 @@
+<p>Test</p>
 <table>
-    <tr ng-repeat="x in names">
+    <tr ng-repeat="x in names | orderBy:'Name'">
       <td>{{ x.Name }}</td>
       <td>{{ x.Country }}</td>
     </tr>

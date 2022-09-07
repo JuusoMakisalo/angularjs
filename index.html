@@ -2,11 +2,16 @@
  <html lang="en-US">
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.js"></script>
     <script src="app.js"></script>
     <body>
         <div ng-app="myApp">
-        <div ng-controller="myCtrl" ng-include="'myListing.htm'">
-        </div>    
-    </div>
+            <div ng-controller="myCtrl">
+                <p><a href="#/!">Main</a></p>
+                <a href="#!banana">Banana</a>
+                <a href="#!tomato">Tomato</a>
+                <div ng-view></div>
+            </div>    
+        </div>
     </body>
  </html>
